@@ -1,0 +1,14 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: prometheus
+  namespace: default
+spec:
+  releaseName: prometheus
+  chart:
+    name: prometheus
+    repository: https://kubernetes-charts.storage.googleapis.com
+    version: 10.4.0
+  values:
+    service:
+      type: NodePort
