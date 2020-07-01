@@ -1,0 +1,23 @@
+{
+  "apiVersion": "helm.fluxcd.io/v1",
+  "kind": "HelmRelease",
+  "metadata": {
+    "annotations": {},
+    "name": "prometheus",
+    "namespace": "default"
+  },
+  "spec": {
+    "chart": {
+      "name": "prometheus",
+      "repository": "https://kubernetes-charts.storage.googleapis.com",
+      "version": "10.4.0"
+    },
+    "releaseName": "prometheus",
+    "values": {
+      "service": {
+        "type": "NodePort"
+      }
+    },
+    "wait": true
+  }
+}
