@@ -1,6 +1,7 @@
 function (
     containerPort=80, 
-    image="gcr.io/heptio-images/ks-guestbook-demo:0.2", 
+    image="docker.io/sledigabel/test-argocd-app", 
+    tag="prod", 
     name="jsonnet-guestbook-ui",
     replicas=1,
     servicePort=80, 
@@ -49,7 +50,7 @@ function (
                 "spec": {
                 "containers": [
                     {
-                        "image": image,
+                        "image": image+":sha-"+tag
                         "name": name,
                         "ports": [
                         {
