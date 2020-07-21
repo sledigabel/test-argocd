@@ -50,7 +50,7 @@ function (
                 "spec": {
                 "containers": [
                     {
-                        "image": image+":sha-"+tag,
+                        "image": image+":sha-"+std.substr(tag,0,7),
                         "name": name,
                         "ports": [
                         {
