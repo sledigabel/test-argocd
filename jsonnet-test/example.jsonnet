@@ -1,5 +1,5 @@
 function (
-    containerPort=80, 
+    containerPort=8080,
     image="docker.io/sledigabel/test-argocd-app", 
     tag="prod", 
     name="jsonnet-guestbook-ui",
