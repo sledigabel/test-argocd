@@ -1,5 +1,5 @@
 function (
-    name=myappdemo,
+    name="myappdemo",
     repository="http://192.168.64.98:32578", 
 )
     [
