@@ -6,7 +6,7 @@ import (
 )
 
 func sayHello(w http.ResponseWriter, r *http.Request) {
-	message := fmt.Sprintf("Hello %s, :-)", r.RemoteAddr)
+	message := fmt.Sprintf("Hello %s, :-) Diogo!", r.RemoteAddr)
 	w.Write([]byte(message))
 }
 
