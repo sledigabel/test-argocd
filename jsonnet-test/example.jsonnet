@@ -2,8 +2,8 @@ function (
     containerPort=8080,
     image="docker.io/sledigabel/test-argocd-app", 
     tag="prod", 
-    name="jsonnet-guestbook-ui",
-    replicas=1,
+    name="myapp",
+    replicas=2,
     servicePort=80, 
     type="NodePort"
 )
